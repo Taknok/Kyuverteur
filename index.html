@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kyu Converter (Javascript)</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800|Poppins:700" rel="stylesheet">
+
+<div class="converter-wrapper">
+  <h1>KYUCONVERTEUR</h1>
+  <h2>Time converter from kyuniverse to ours</h2>
+  <div class="converter-side-a">
+    <form name="form_A" onSubmit="return false">
+      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="" placeholder="0" onKeyUp="Calculate(document.form_A, document.form_B)">
+      <span class="unit human">
+        0
+      </span>
+      <span class="unit">
+        Kyu Time (min)
+      </span>
+    </form>
+  </div> <!-- /converter-side-a -->
+  
+ <div class="converter-equals">
+   <p>=</p>
+ </div> <!-- /converter-side-a -->
+
+  <div class="converter-side-b">
+    <form name="form_B" onSubmit="return false">
+      <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="" placeholder="0" onkeyup="Calculate(document.form_B, document.form_A)">
+      <span class="unit human">
+        0
+      </span>
+      <span class="unit">
+        Normal Time (min)
+      </span>
+    </form>
+  </div> <!-- /converter-side-b -->
+</div><!-- /converter-wrapper -->
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
